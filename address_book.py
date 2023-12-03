@@ -1,12 +1,13 @@
 from datetime import datetime as dt, timedelta
 from collections import UserList
 import pickle
-from info import *
+from info import InOutCommands, Record, Name, Phone, Birthday, Email, Status, Note
 import os
 
 
 class AddressBook(UserList):
-    def __init__(self, in_out: In_out_commands):
+
+    def __init__(self, in_out: InOutCommands):
         self.data = []
         self.counter = -1
         self.in_out = in_out

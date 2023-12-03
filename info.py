@@ -2,7 +2,8 @@ from datetime import datetime as dt
 import re
 from abc import ABC, abstractmethod
 
-class In_out_commands():
+
+class InOutCommands():
 
     def print_command(self, printdata):
         print(printdata)
@@ -34,13 +35,15 @@ class Record:
 
 
 class Field(ABC):
-    in_out = In_out_commands()
+    
+    in_out = InOutCommands()
     @abstractmethod
     def __getitem__(self):
         pass
 
 
 class Name(Field):
+    
     def __init__(self, value):
         self.value = value
         
@@ -142,6 +145,7 @@ class Status(Field):
 
 
 class Note(Field):
+
     def __init__(self, value):
         self.value = value
 

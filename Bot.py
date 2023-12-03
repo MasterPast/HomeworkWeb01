@@ -1,8 +1,10 @@
-from AddressBook import *
-# from info import In_out_commands
+from info import InOutCommands
+from address_book import AddressBook
+from info import InOutCommands, Record, Name, Phone, Birthday, Email, Status, Note
 
 class Bot:
-    def __init__(self, in_out: In_out_commands):
+    
+    def __init__(self, in_out: InOutCommands):
         self.in_out = in_out
         self.book = AddressBook(in_out)
 

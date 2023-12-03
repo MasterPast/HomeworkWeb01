@@ -29,3 +29,8 @@
 [02:42:00] Addressbook has been loaded!
 [02:46:19] Addressbook has been loaded!
 [02:47:15] Addressbook has been loaded!
+[19:24:23] Addressbook has been loaded!
+[19:43:05] Addressbook has been loaded!
+[19:46:04] Addressbook has been loaded!
+[19:46:42] Contact Trinity has been added.
+[19:46:42] Addressbook has been saved!

@@ -1,13 +1,16 @@
-from Bot import Bot
-from info import In_out_commands
+from bot import Bot
+from info import InOutCommands
+
 
 if __name__ == "__main__":
-    bot = Bot(In_out_commands())
-    in_out = In_out_commands()
+    bot = Bot(InOutCommands())
+    in_out = InOutCommands()
     in_out.print_command('Hello. I am your contact-assistant. What should I do with your contacts?')
     bot.book.load("auto_save")
     commands = ['Add', 'Search', 'Edit', 'Load', 'Remove', 'Save', 'Congratulate', 'View', 'Exit']
+
     while True:
+
         action = in_out.input_command(
             'Type help for list of commands or enter your command\n').strip().lower()
         if action == 'help':
@@ -22,5 +25,6 @@ if __name__ == "__main__":
             bot.handle(action)
             if action in ['add', 'remove', 'edit']:
                 bot.book.save("auto_save")
+
         if action == 'exit':
             break
